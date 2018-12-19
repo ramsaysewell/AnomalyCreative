@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Esteban|Montserrat:400,700');
+
+h1 {
+  font-family: $heading;
+  font-weight: 700;
+  font-size: 97px;
+  text-align: center;
+  line-height: 100%;
+}
+
+p {
+  font-family: $paragraph;
+}

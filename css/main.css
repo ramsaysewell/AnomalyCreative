@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Esteban|Montserrat:400,700");
+header {
+  font-size: 16px; }
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 16px; }
+
+nav {
+  position: absolute;
+  font: "Montserrat";
+  font-weight: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 16px; }
+  nav ul {
+    list-style: none; }
+    nav ul li {
+      display: inline-block;
+      margin: 0 50px; }
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-shadow: 0 8px #ccc; }
+  .header .headerText {
+    text-align: center;
+    font: "Montserrat";
+    font-weight: 700;
+    font-size: 4vw;
+    line-height: 90%; }
+    .header .headerText #anomaly {
+      font-size: 9vw;
+      color: #3E70D5;
+      line-height: 80%; }
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 97px;
+  text-align: center;
+  line-height: 100%; }
+
+p {
+  font-family: "Esteban"; }
+
+/*# sourceMappingURL=main.css.map */

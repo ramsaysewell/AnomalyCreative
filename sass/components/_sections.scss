@@ -1,0 +1,59 @@
+// GLOBAL
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-size: $global_font_size;
+}
+
+// END GLOBAL
+
+// NAVIGATION
+
+nav {
+  position: absolute;
+  font: $heading;
+  font-weight: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: $global_font_size;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin: 0 50px;
+    }
+  }
+}
+
+// END NAVIGATION
+
+// HEADER
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-shadow: 0 8px #ccc;
+
+  .headerText {
+    text-align: center;
+    font: $heading;
+    font-weight: $headingWeight;
+    font-size: 4vw;
+    line-height: 90%;
+
+    #anomaly {
+      font-size: 9vw;
+      color: #3E70D5;
+      line-height: 80%;
+    }
+  }
+}
+// END HEADER
