@@ -6,19 +6,22 @@ body,
 html {
   height: 100%;
   width: 100%;
-  font-size: 16px; }
+  font-size: 16px;
+  background-color: #eee; }
 
 nav {
   position: absolute;
+  z-index: 10;
   font: "Montserrat";
   font-weight: 0;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 15px;
-  font-size: 16px; }
+  padding: 35px 25px;
+  font-size: 20px; }
   nav ul {
-    list-style: none; }
+    list-style: none;
+    font-weight: 700; }
     nav ul li {
       display: inline-block;
       margin: 0 50px; }
@@ -35,20 +38,17 @@ nav {
     font: "Montserrat";
     font-weight: 700;
     font-size: 4vw;
-    line-height: 90%; }
+    line-height: 90%;
+    margin-bottom: 5%; }
     .header .headerText #anomaly {
       font-size: 9vw;
       color: #3E70D5;
       line-height: 80%; }
 
-h1 {
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 97px;
-  text-align: center;
-  line-height: 100%; }
-
 p {
   font-family: "Esteban"; }
+
+a {
+  color: #000; }
 
 /*# sourceMappingURL=main.css.map */

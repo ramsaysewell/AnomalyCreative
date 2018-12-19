@@ -5,6 +5,7 @@ html {
   height: 100%;
   width: 100%;
   font-size: $global_font_size;
+  background-color: #eee;
 }
 
 // END GLOBAL
@@ -13,16 +14,18 @@ html {
 
 nav {
   position: absolute;
+  z-index: 10;
   font: $heading;
   font-weight: 0;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 15px;
-  font-size: $global_font_size;
+  padding: 35px 25px;
+  font-size: 20px;
 
   ul {
     list-style: none;
+    font-weight: 700;
 
     li {
       display: inline-block;
@@ -48,6 +51,7 @@ nav {
     font-weight: $headingWeight;
     font-size: 4vw;
     line-height: 90%;
+    margin-bottom: 5%;
 
     #anomaly {
       font-size: 9vw;
@@ -57,3 +61,5 @@ nav {
   }
 }
 // END HEADER
+
+// SHOWCASE
