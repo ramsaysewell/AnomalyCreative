@@ -21,7 +21,8 @@ nav {
   font-size: 20px; }
   nav ul {
     list-style: none;
-    font-weight: 700; }
+    font-weight: 600;
+    letter-spacing: 1.2px; }
     nav ul li {
       display: inline-block;
       margin: 0 50px; }
@@ -39,12 +40,51 @@ nav {
     font-weight: 700;
     font-size: 4vw;
     line-height: 90%;
-    margin-bottom: 5%; }
+    margin-bottom: 5%;
+    width: 80%; }
     .header .headerText #anomaly {
       font-size: 9vw;
       color: #3E70D5;
       line-height: 80%; }
 
+.showcase {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: green;
+  height: 100%; }
+  .showcase .item {
+    flex-grow: 1;
+    height: 760px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue; }
+    .showcase .item h1 {
+      font: "Montserrat";
+      font-weight: 700; }
+    .showcase .item p {
+      font: "Esteban";
+      text-align: center;
+      font-size: 18px; }
+    .showcase .item img {
+      position: absolute;
+      min-width: 480px; }
+    .showcase .item img:hover {
+      transition: 200ms; }
+    .showcase .item .itemText {
+      text-align: center;
+      opacity: 1;
+      position: relative;
+      color: white;
+      align-self: center; }
+
+@media (max-width: 960px) {
+  .header {
+    width: 100%; }
+    .header .headerText {
+      font-size: 7vh; }
+    .header #anomaly {
+      font-size: 9vh; } }
 p {
   font-family: "Esteban"; }
 
