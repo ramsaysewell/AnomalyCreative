@@ -49,16 +49,25 @@ nav {
 
 .showcase {
   display: flex;
-  flex-wrap: wrap;
-  background-color: green;
-  height: 100%; }
+  flex-wrap: wrap; }
   .showcase .item {
-    flex-grow: 1;
-    height: 760px;
+    width: 50%;
     display: flex;
+    flex-grow: 1;
+    flex-basis: 700px;
     align-items: center;
     justify-content: center;
-    background-color: blue; }
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px; }
+    .showcase .item .overlay {
+      width: 50%;
+      background-color: #3E70D5;
+      position: absolute;
+      height: 500px;
+      opacity: 0;
+      transition: 0.5s; }
     .showcase .item h1 {
       font: "Montserrat";
       font-weight: 700; }
@@ -68,16 +77,21 @@ nav {
       font-size: 18px; }
     .showcase .item img {
       position: absolute;
-      min-width: 480px; }
+      max-width: 50%;
+      width: 100%; }
     .showcase .item img:hover {
-      transition: 200ms; }
+      transition: 2s; }
     .showcase .item .itemText {
       text-align: center;
-      opacity: 1;
+      opacity: 0;
       position: relative;
       color: white;
-      align-self: center; }
+      align-self: center;
+      transition: 0.5s; }
 
+@media (max-width: 1100px) {
+  .showcase .item .overlay {
+    width: 100%; } }
 @media (max-width: 960px) {
   .header {
     width: 100%; }
@@ -85,6 +99,11 @@ nav {
       font-size: 7vh; }
     .header #anomaly {
       font-size: 9vh; } }
+@media (max-width: 700px) {
+  .showcase .item {
+    width: 100%; }
+    .showcase .item .overlay {
+      width: 100%; } }
 p {
   font-family: "Esteban"; }
 
