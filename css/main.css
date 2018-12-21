@@ -50,44 +50,52 @@ nav {
 .showcase {
   display: flex;
   flex-wrap: wrap; }
-  .showcase .item {
-    width: 50%;
+  .showcase .row {
     display: flex;
+    flex-wrap: wrap;
     flex-grow: 1;
-    flex-basis: 700px;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 500px; }
-    .showcase .item .overlay {
-      width: 50%;
-      background-color: #3E70D5;
-      position: absolute;
-      height: 500px;
-      opacity: 0;
-      transition: 0.5s; }
-    .showcase .item h1 {
-      font: "Montserrat";
-      font-weight: 700; }
-    .showcase .item p {
-      font: "Esteban";
-      text-align: center;
-      font-size: 18px; }
-    .showcase .item img {
-      position: absolute;
-      max-width: 50%;
-      width: 100%; }
-    .showcase .item img:hover {
-      transition: 2s; }
-    .showcase .item .itemText {
-      text-align: center;
-      opacity: 0;
-      position: relative;
-      color: white;
-      align-self: center;
-      transition: 0.5s; }
+    flex-basis: 1500px;
+    justify-content: flex-start; }
+    .showcase .row .item {
+      flex-basis: 400px;
+      flex-grow: 1;
+      height: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+      .showcase .row .item .overlay {
+        display: block;
+        height: 450px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #3E70D5;
+        position: relative;
+        opacity: 0;
+        transition: 0.5s;
+        z-index: 55; }
+        .showcase .row .item .overlay:before {
+          content: ""; }
+      .showcase .row .item .itemText {
+        text-align: center;
+        opacity: 0;
+        position: absolute;
+        color: white;
+        align-self: center;
+        transition: 0.5s;
+        z-index: 100; }
+      .showcase .row .item h1 {
+        font: "Montserrat";
+        font-weight: 700; }
+      .showcase .row .item p {
+        font: "Esteban";
+        text-align: center;
+        font-size: 18px; }
+      .showcase .row .item img:hover {
+        transition: 2s; }
 
 .about {
   padding: 5% 10% 0;
@@ -148,15 +156,14 @@ nav {
 
 @media (max-width: 1100px) {
   .showcase .item .overlay {
-    width: 100%; } }
-@media (max-width: 960px) {
+    width: 50%; }
+
   .header {
     width: 100%; }
+    .header #anomaly,
     .header .headerText {
-      font-size: 7vh; }
-    .header #anomaly {
-      font-size: 9vh; }
-
+      font-size: 7vh; } }
+@media (max-width: 960px) {
   .about {
     width: 100%; }
     .about .collage {
@@ -190,10 +197,11 @@ nav {
         width: 100%;
         margin: 10px 0; } }
 @media (max-width: 700px) {
-  .showcase .item {
+  .header {
     width: 100%; }
-    .showcase .item .overlay {
-      width: 100%; } }
+    .header #anomaly,
+    .header .headerText {
+      font-size: 11vh; } }
 p {
   font: "Esteban"; }
 
