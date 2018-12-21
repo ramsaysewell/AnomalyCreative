@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Esteban|Montserrat:400,700');
+
+p {
+  font: $paragraph;
+}
+
+a {
+  color: #000;
+}
+
+h1 {
+  font: $heading;
+  font-weight: $headingWeight;
+}

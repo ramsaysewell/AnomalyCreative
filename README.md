@@ -1,2 +1,1 @@
-# AnomalyCreative
-Anomaly Creative Co. is a project set up by Noah Briley and Ramsay Sewell
+Anomaly Creative Co. is a project setup my Noah Briley @NoahBriley and @RamsaySewell 

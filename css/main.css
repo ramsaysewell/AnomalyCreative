@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Esteban|Montserrat:400,700");
+header {
+  font-size: 16px; }
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  background-color: #eee; }
+
+nav {
+  position: absolute;
+  z-index: 10;
+  font: "Montserrat";
+  font-weight: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 35px 25px;
+  font-size: 20px; }
+  nav ul {
+    list-style: none;
+    font-weight: 600;
+    letter-spacing: 1.2px; }
+    nav ul li {
+      display: inline-block;
+      margin: 0 50px; }
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-shadow: 0 8px #ccc; }
+  .header .headerText {
+    text-align: center;
+    font: "Montserrat";
+    font-weight: 700;
+    font-size: 4vw;
+    line-height: 90%;
+    margin-bottom: 5%;
+    width: 80%; }
+    .header .headerText #anomaly {
+      font-size: 9vw;
+      color: #3E70D5;
+      line-height: 80%; }
+
+.showcase {
+  display: flex;
+  flex-wrap: wrap; }
+  .showcase .item {
+    width: 50%;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 700px;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px; }
+    .showcase .item .overlay {
+      width: 50%;
+      background-color: #3E70D5;
+      position: absolute;
+      height: 500px;
+      opacity: 0;
+      transition: 0.5s; }
+    .showcase .item h1 {
+      font: "Montserrat";
+      font-weight: 700; }
+    .showcase .item p {
+      font: "Esteban";
+      text-align: center;
+      font-size: 18px; }
+    .showcase .item img {
+      position: absolute;
+      max-width: 50%;
+      width: 100%; }
+    .showcase .item img:hover {
+      transition: 2s; }
+    .showcase .item .itemText {
+      text-align: center;
+      opacity: 0;
+      position: relative;
+      color: white;
+      align-self: center;
+      transition: 0.5s; }
+
+.about {
+  padding: 5% 10% 0;
+  width: 65%;
+  margin: 0 auto; }
+  .about .collage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; }
+    .about .collage img {
+      padding: 5px;
+      width: 60%; }
+
+.servicesSection {
+  padding: 5% 10%;
+  width: 65%;
+  margin: 0 auto; }
+  .servicesSection .services {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    .servicesSection .services .service {
+      background-color: #ddd;
+      width: 30%;
+      padding: 25px;
+      text-align: center; }
+      .servicesSection .services .service img {
+        height: 60px;
+        padding: 10px; }
+      .servicesSection .services .service p {
+        padding-top: 5%;
+        text-align: left; }
+
+.testimonialsSection {
+  padding: 2% 10%;
+  width: 65%;
+  margin: 0 auto; }
+  .testimonialsSection .testimonials {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    .testimonialsSection .testimonials .testimonial {
+      background-color: #ddd;
+      width: 45%;
+      padding: 25px;
+      text-align: center; }
+      .testimonialsSection .testimonials .testimonial img {
+        height: 100px;
+        padding: 10px; }
+      .testimonialsSection .testimonials .testimonial p {
+        padding-top: 5%;
+        text-align: left; }
+
+@media (max-width: 1100px) {
+  .showcase .item .overlay {
+    width: 100%; } }
+@media (max-width: 960px) {
+  .header {
+    width: 100%; }
+    .header .headerText {
+      font-size: 7vh; }
+    .header #anomaly {
+      font-size: 9vh; }
+
+  .about {
+    width: 100%; }
+    .about .collage {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 0; }
+      .about .collage img {
+        width: 90%;
+        padding: 10px 0;
+        height: auto; }
+
+  .servicesSection,
+  .testimonialsSection {
+    width: 100%; }
+    .servicesSection .services,
+    .servicesSection .testimonials,
+    .testimonialsSection .services,
+    .testimonialsSection .testimonials {
+      padding: 0;
+      width: 100%; }
+      .servicesSection .services .service,
+      .servicesSection .services .testimonial,
+      .servicesSection .testimonials .service,
+      .servicesSection .testimonials .testimonial,
+      .testimonialsSection .services .service,
+      .testimonialsSection .services .testimonial,
+      .testimonialsSection .testimonials .service,
+      .testimonialsSection .testimonials .testimonial {
+        width: 100%;
+        margin: 10px 0; } }
+@media (max-width: 700px) {
+  .showcase .item {
+    width: 100%; }
+    .showcase .item .overlay {
+      width: 100%; } }
+p {
+  font: "Esteban"; }
+
+a {
+  color: #000; }
+
+h1 {
+  font: "Montserrat";
+  font-weight: 700; }
+
+/*# sourceMappingURL=main.css.map */

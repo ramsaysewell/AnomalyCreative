@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.573 42.08">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #3e70d5;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="code_icon" data-name="code icon" transform="translate(2.875 1.385)">
+    <path id="Path_1" data-name="Path 1" class="cls-1" d="M-1720.91,4231.628l-20.217,19.583,20.217,19.581" transform="translate(1741.127 -4231.558)"/>
+    <path id="Path_2" data-name="Path 2" class="cls-1" d="M-1705.128,4231.628l20.851,19.675-20.851,19.489" transform="translate(1750.054 -4231.558)"/>
+    <line id="Line_1" data-name="Line 1" class="cls-1" x1="11.793" y2="39.166" transform="translate(26.747)"/>
+  </g>
+</svg>
