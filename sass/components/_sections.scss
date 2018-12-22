@@ -57,7 +57,7 @@ nav {
 
     #anomaly {
       font-size: 9vw;
-      color: #3E70D5;
+      color: $anomaly;
       line-height: 80%;
     }
   }
@@ -94,7 +94,7 @@ nav {
         width: 100%;
         margin: 0;
         padding: 0;
-        background-color: #3E70D5;
+        background-color: $anomaly;
         position: relative;
         opacity: 0;
         transition: 0.5s;
@@ -140,7 +140,7 @@ nav {
 
 .about {
   padding: 5% 10% 0;
-  width: 65%;
+  width: 85%;
   margin: 0 auto;
 
   .collage {
@@ -162,7 +162,7 @@ nav {
 
 .servicesSection {
   padding: 5% 10%;
-  width: 65%;
+  width: 85%;
   margin: 0 auto;
 
   .services {
@@ -170,12 +170,11 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 
     .service {
       background-color: #ddd;
       width: 30%;
-      padding: 25px;
+      padding: 45px;
       text-align: center;
 
       img {
@@ -197,7 +196,7 @@ nav {
 
 .testimonialsSection {
   padding: 2% 10%;
-  width: 65%;
+  width: 85%;
   margin: 0 auto;
 
   .testimonials {
@@ -229,6 +228,46 @@ nav {
 
 // END TESTIMONIALS
 
+// CONTACT
+
+.contactSection {
+  width: 85%;
+  margin: 0 auto;
+  padding: 5% 10%;
+
+  .inputRow {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+    .inputGroup {
+      width: 45%;
+
+      label {
+        font: $paragraph;
+        opacity: 0;
+        font-size: $global_font_size - 4;
+        animation: 0.5s ease-in;
+        position: absolute;
+        z-index: 8;
+        overflow: hidden;
+      }
+
+      input {
+        overflow: hidden;
+
+        z-index: 10;
+        display: block;
+        border: none;
+        border-radius: 0;
+      }
+    }
+  }
+
+}
+
+// END CONTACT
+
 // RESPONSIVE
 
 @media (max-width: 1100px) {
@@ -248,21 +287,17 @@ nav {
       font-size: 7vh;
     }
   }
+
+  .servicesSection {
+    .services {
+      .service {
+        width: 30%;
+      }
+    }
+  }
 }
 
 @media (max-width: 960px) {
-  // .header {
-  //   width: 100%;
-  //
-  //   .headerText {
-  //     font-size: 6vh;
-  //   }
-  //
-  //   #anomaly {
-  //     font-size: 6vh;
-  //   }
-  // }
-
   .about {
     width: 100%;
 
@@ -300,23 +335,23 @@ nav {
 
 }
 @media (max-width: 700px) {
-  // .showcase {
-  //   .item {
-  //     width: 100%;
-  //
-  //     .overlay {
-  //       width: 100%;
-  //     }
-  //   }
-  //
-  // }
-
   .header {
     width: 100%;
 
     #anomaly,
     .headerText {
-      font-size: 11vh;
+      font-size: 7vh;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .servicesSection {
+    .services {
+      .service {
+        padding: 20px;
+        width: 100%;
+      }
     }
   }
 }
