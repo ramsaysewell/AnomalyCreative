@@ -140,7 +140,7 @@ nav {
 
 .about {
   padding: 5% 10% 0;
-  width: 65%;
+  width: 85%;
   margin: 0 auto;
 
   .collage {
@@ -162,7 +162,7 @@ nav {
 
 .servicesSection {
   padding: 5% 10%;
-  width: 65%;
+  width: 85%;
   margin: 0 auto;
 
   .services {
@@ -170,12 +170,11 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 
     .service {
       background-color: #ddd;
       width: 30%;
-      padding: 25px;
+      padding: 45px;
       text-align: center;
 
       img {
@@ -197,7 +196,7 @@ nav {
 
 .testimonialsSection {
   padding: 2% 10%;
-  width: 65%;
+  width: 85%;
   margin: 0 auto;
 
   .testimonials {
@@ -232,7 +231,7 @@ nav {
 // CONTACT
 
 .contactSection {
-  width: 65%;
+  width: 85%;
   margin: 0 auto;
   padding: 5% 10%;
 
@@ -288,21 +287,17 @@ nav {
       font-size: 7vh;
     }
   }
+
+  .servicesSection {
+    .services {
+      .service {
+        width: 30%;
+      }
+    }
+  }
 }
 
 @media (max-width: 960px) {
-  // .header {
-  //   width: 100%;
-  //
-  //   .headerText {
-  //     font-size: 6vh;
-  //   }
-  //
-  //   #anomaly {
-  //     font-size: 6vh;
-  //   }
-  // }
-
   .about {
     width: 100%;
 
@@ -340,23 +335,23 @@ nav {
 
 }
 @media (max-width: 700px) {
-  // .showcase {
-  //   .item {
-  //     width: 100%;
-  //
-  //     .overlay {
-  //       width: 100%;
-  //     }
-  //   }
-  //
-  // }
-
   .header {
     width: 100%;
 
     #anomaly,
     .headerText {
-      font-size: 11vh;
+      font-size: 7vh;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .servicesSection {
+    .services {
+      .service {
+        padding: 20px;
+        width: 100%;
+      }
     }
   }
 }
