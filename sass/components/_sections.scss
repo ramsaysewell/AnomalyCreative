@@ -5,7 +5,8 @@ html {
   height: 100%;
   width: 100%;
   font-size: $global_font_size;
-  background-color: #eee;
+  color: $dark;
+  // background-color: #eee;
 }
 
 // END GLOBAL
@@ -172,7 +173,7 @@ nav {
     justify-content: space-between;
 
     .service {
-      background-color: #ddd;
+      background-color: $cardBackground;
       width: 30%;
       padding: 45px;
       text-align: center;
@@ -207,10 +208,14 @@ nav {
     align-items: center;
 
     .testimonial {
-      background-color: #ddd;
+      background-color: $cardBackground;
       width: 45%;
       padding: 25px;
       text-align: center;
+
+      .subheading {
+        color: $mutedText;
+      }
 
       img {
         height: 100px;
@@ -230,7 +235,7 @@ nav {
 
 // CONTACT
 
-.contactSection {
+.contact {
   width: 85%;
   margin: 0 auto;
   padding: 5% 10%;
@@ -253,13 +258,26 @@ nav {
         overflow: hidden;
       }
 
-      input {
+      input,
+      textarea {
         overflow: hidden;
-
+        background-color: $cardBackground;
         z-index: 10;
         display: block;
         border: none;
         border-radius: 0;
+        color: $dark;
+
+        ::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: $mutedText;
+          opacity: 1;
+          /* Firefox */
+        }
+      }
+
+      textarea {
+        resize: none;
       }
     }
   }
@@ -267,6 +285,16 @@ nav {
 }
 
 // END CONTACT
+
+// FOOTER
+
+.footer {
+  display: flex;
+  width: 100%;
+  background-color: #E8E8E8;
+}
+
+// END FOOTER
 
 // RESPONSIVE
 

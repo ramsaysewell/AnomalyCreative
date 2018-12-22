@@ -7,7 +7,7 @@ html {
   height: 100%;
   width: 100%;
   font-size: 16px;
-  background-color: #eee; }
+  color: #232323; }
 
 nav {
   position: absolute;
@@ -120,7 +120,7 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between; }
     .servicesSection .services .service {
-      background-color: #ddd;
+      background-color: #F5F5F5;
       width: 30%;
       padding: 45px;
       text-align: center; }
@@ -142,10 +142,12 @@ nav {
     justify-content: space-between;
     align-items: center; }
     .testimonialsSection .testimonials .testimonial {
-      background-color: #ddd;
+      background-color: #F5F5F5;
       width: 45%;
       padding: 25px;
       text-align: center; }
+      .testimonialsSection .testimonials .testimonial .subheading {
+        color: #858585; }
       .testimonialsSection .testimonials .testimonial img {
         height: 100px;
         padding: 10px; }
@@ -153,17 +155,17 @@ nav {
         padding-top: 5%;
         text-align: left; }
 
-.contactSection {
+.contact {
   width: 85%;
   margin: 0 auto;
   padding: 5% 10%; }
-  .contactSection .inputRow {
+  .contact .inputRow {
     margin-top: 5%;
     display: flex;
     justify-content: space-between; }
-    .contactSection .inputRow .inputGroup {
+    .contact .inputRow .inputGroup {
       width: 45%; }
-      .contactSection .inputRow .inputGroup label {
+      .contact .inputRow .inputGroup label {
         font: "Esteban";
         opacity: 0;
         font-size: 12px;
@@ -171,12 +173,28 @@ nav {
         position: absolute;
         z-index: 8;
         overflow: hidden; }
-      .contactSection .inputRow .inputGroup input {
+      .contact .inputRow .inputGroup input,
+      .contact .inputRow .inputGroup textarea {
         overflow: hidden;
+        background-color: #F5F5F5;
         z-index: 10;
         display: block;
         border: none;
-        border-radius: 0; }
+        border-radius: 0;
+        color: #232323; }
+        .contact .inputRow .inputGroup input ::placeholder,
+        .contact .inputRow .inputGroup textarea ::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #858585;
+          opacity: 1;
+          /* Firefox */ }
+      .contact .inputRow .inputGroup textarea {
+        resize: none; }
+
+.footer {
+  display: flex;
+  width: 100%;
+  background-color: #E8E8E8; }
 
 @media (max-width: 1100px) {
   .showcase .item .overlay {
