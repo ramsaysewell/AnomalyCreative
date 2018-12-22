@@ -154,6 +154,31 @@ nav {
         padding-top: 5%;
         text-align: left; }
 
+.contactSection {
+  width: 65%;
+  margin: 0 auto;
+  padding: 5% 10%; }
+  .contactSection .inputRow {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between; }
+    .contactSection .inputRow .inputGroup {
+      width: 45%; }
+      .contactSection .inputRow .inputGroup label {
+        font: "Esteban";
+        opacity: 0;
+        font-size: 12px;
+        animation: 0.5s ease-in;
+        position: absolute;
+        z-index: 8;
+        overflow: hidden; }
+      .contactSection .inputRow .inputGroup input {
+        overflow: hidden;
+        z-index: 10;
+        display: block;
+        border: none;
+        border-radius: 0; }
+
 @media (max-width: 1100px) {
   .showcase .item .overlay {
     width: 50%; }

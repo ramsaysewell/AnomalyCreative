@@ -57,7 +57,7 @@ nav {
 
     #anomaly {
       font-size: 9vw;
-      color: #3E70D5;
+      color: $anomaly;
       line-height: 80%;
     }
   }
@@ -94,7 +94,7 @@ nav {
         width: 100%;
         margin: 0;
         padding: 0;
-        background-color: #3E70D5;
+        background-color: $anomaly;
         position: relative;
         opacity: 0;
         transition: 0.5s;
@@ -228,6 +228,46 @@ nav {
 }
 
 // END TESTIMONIALS
+
+// CONTACT
+
+.contactSection {
+  width: 65%;
+  margin: 0 auto;
+  padding: 5% 10%;
+
+  .inputRow {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+    .inputGroup {
+      width: 45%;
+
+      label {
+        font: $paragraph;
+        opacity: 0;
+        font-size: $global_font_size - 4;
+        animation: 0.5s ease-in;
+        position: absolute;
+        z-index: 8;
+        overflow: hidden;
+      }
+
+      input {
+        overflow: hidden;
+
+        z-index: 10;
+        display: block;
+        border: none;
+        border-radius: 0;
+      }
+    }
+  }
+
+}
+
+// END CONTACT
 
 // RESPONSIVE
 
