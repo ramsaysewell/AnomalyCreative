@@ -378,9 +378,12 @@ nav {
   .header {
     width: 100%;
 
-    #anomaly,
     .headerText {
-      font-size: 7vh;
+      font-size: 5vh;
+    }
+
+    #anomaly {
+      font-size: 7vh !important;
     }
   }
 

@@ -253,9 +253,10 @@ nav {
 @media (max-width: 700px) {
   .header {
     width: 100%; }
-    .header #anomaly,
     .header .headerText {
-      font-size: 7vh; }
+      font-size: 5vh; }
+    .header #anomaly {
+      font-size: 7vh !important; }
 
   button {
     min-width: 100%; } }
