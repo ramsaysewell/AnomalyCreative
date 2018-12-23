@@ -9,7 +9,7 @@ $(".item").mouseout(function() {
 });
 
 $(".inputGroup input, .inputGroup textarea").focus(function() {
-  if ($(this).val().length === 0) {
+  if ($(this).val().length === 0 && $(window).width() > 600) {
     $(this).siblings().animate({
       opacity: 1,
       top: "-=25"
@@ -17,7 +17,7 @@ $(".inputGroup input, .inputGroup textarea").focus(function() {
   }
 })
 $(".inputGroup input, .inputGroup textarea").focusout(function() {
-  if ($(this).val().length === 0) {
+  if ($(this).val().length === 0 && $(window).width() > 600) {
     $(this).siblings().animate({
       opacity: 0,
       top: "+=25"
