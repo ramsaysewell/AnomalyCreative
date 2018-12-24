@@ -11,24 +11,34 @@
 </head>
 
 <body>
-  <nav>
-    <div class="logo">
-      <img src="./img/logos/anomaly-black-ultra-small.png" alt="Anomaly">
-    </div>
-    <ul>
-      <li><a href="#about">about</a></li>
-      <li><a href="#our-work">our work</a></li>
-      <li><a href="#contact">contact</a></li>
-    </ul>
-  </nav>
-  <section class="header">
 
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"><img src="./img/logos/anomaly-black-ultra-small.png" alt="Anomaly"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#about">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#our-work">our work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="header">
     <div class="headerText">
       <span>BRAND BY BRAND</span> <br><span> WE MAKE THIS WORLD AN</span> <br><span id="anomaly">ANOMALY</span>
     </div>
   </section>
 
-  <section class="showcase">
+  <section class="showcase" id="our-work">
     <div class="row">
       <div class="item" style="background-image: url('img/projects/houses-project.png'); background-position: bottom;">
 
@@ -65,7 +75,7 @@
     </div>
   </section>
 
-  <section class="about">
+  <section class="about" id="about">
     <article>
       <h1>
         About
@@ -79,7 +89,7 @@
     </article>
   </section>
 
-  <section class="servicesSection">
+  <section class="servicesSection" id="services">
     <article>
       <h1>Services</h1>
     </article>
@@ -102,7 +112,7 @@
     </div>
   </section>
 
-  <section class="testimonialsSection">
+  <section class="testimonialsSection" id="testimonials">
     <article>
       <h1>Testimonials</h1>
     </article>
@@ -126,7 +136,7 @@
     </div>
   </section>
 
-  <section class="contactSection">
+  <section class="contact" id="contact">
     <article>
       <h1>Contact Us</h1>
     </article>
@@ -151,7 +161,47 @@
           <input type="text" id="subject" class="form-control" placeholder="Subject">
         </div>
       </div>
+      <div class="inputRow">
+        <div class="inputGroup" style="width: 100%;">
+          <label for="Message">Message</label>
+          <textarea id="message" rows="10" class="form-control" placeholder="Message"></textarea>
+        </div>
+      </div>
+      <div class="inputRow">
+        <div class="inputGroup" style="width: 100%">
+          <button type="submit" id="submit" class="form-control contactBtn">LET'S GET IT</button>
+        </div>
+      </div>
     </form>
+  </section>
+
+  <section class="footer">
+    <div class="footer-padding">
+      <div class="footer-left">
+        <div class="footer-contact">
+          <a href="mailto:hi@anomalycreative.co">hi@anomalycreative.co</a>
+        </div>
+        <div class="footer-copyright">
+          &copy; 2018 Anomaly Creative Co.
+        </div>
+      </div>
+      <div class="footer-right">
+        <ul class="address">
+          <li>PO BOX 443</li>
+          <li>Cape Fair, MO 65624</li>
+        </ul>
+        <ul class="social">
+          <li><a href="https://instagram.com/anomalycreativeco">Instagram</a></li>
+          <li><a href="https://twitter.com/anomalycreativeco">Twitter</a></li>
+          <li><a href="https://github.com/ramsaysewell">Github</a></li>
+        </ul>
+        <ul class="pageNavigation">
+          <li><a href="#about">About</a></li>
+          <li><a href="#our-work">Our Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </section>
 
 
