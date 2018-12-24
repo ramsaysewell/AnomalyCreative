@@ -4,9 +4,10 @@ body,
 html {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
   font-size: $global_font_size;
   color: $dark;
-  // background-color: #eee;
 }
 
 // END GLOBAL
@@ -72,13 +73,16 @@ nav {
 .showcase {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 
   .row {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    flex-basis: 1500px;
+    flex-basis: 2500px;
     justify-content: flex-start;
+    margin: 0;
+    padding: 0;
 
     .item {
       flex-basis: 400px;
@@ -299,9 +303,91 @@ nav {
 // FOOTER
 
 .footer {
-  display: flex;
   width: 100%;
   background-color: #E8E8E8;
+  margin: 0;
+  font-weight: $headingWeight;
+  color: $mutedText;
+
+  a {
+    color: $mutedText;
+
+    &:hover {
+      color: $dark;
+    }
+  }
+
+  ul li {
+    list-style: none;
+
+  }
+
+  .footer-padding {
+    width: 75%;
+    padding: 1% 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    .footer-left {
+      flex-basis: 200px;
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 50%;
+      flex-direction: column;
+
+      .footer-contact a {
+        color: $anomaly !important;
+        font-weight: $headingWeight;
+        font-size: $global_font_size + 3;
+      }
+
+      .footer-copyright {
+        color: $mutedText;
+      }
+    }
+
+    .footer-right {
+      flex-basis: 200px;
+      flex-grow: 1;
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+
+      li {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      .address {
+        flex-grow: 1;
+      }
+
+      .social {
+        flex-grow: 1;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .pageNavigation {
+        flex-grow: 1;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .footer-copyright {
+        bottom: 0;
+      }
+    }
+  }
 }
 
 // END FOOTER
@@ -312,7 +398,7 @@ nav {
   .showcase {
     .item {
       .overlay {
-        width: 50%;
+        max-width: 50%;
       }
     }
   }
@@ -398,10 +484,45 @@ nav {
     }
   }
 
-  // button {
-  //   min-width: 100%;
-  // }
+  .contact {
+    button {
+      min-width: 100%;
+    }
+  }
 
+  .footer {
+    .footer-left {
+      order: 5;
+    }
+
+    .footer-padding {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  .footer-left div:last-child {
+    padding: 1% 0;
+  }
+
+  .footer-right {
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+
+    .pageNavigation {
+      order: -1;
+    }
+
+    .address {
+      order: 5;
+    }
+
+    ul {
+      padding: 5px 0 0;
+    }
+  }
 }
 
 @media (max-width: 1100px) {
