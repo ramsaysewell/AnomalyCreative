@@ -1,1 +1,1 @@
-Anomaly Creative Co. is a project setup my Noah Briley @NoahBriley and @RamsaySewell 
+Anomaly Creative Co. is a project setup by @NoahBriley and @RamsaySewell 
