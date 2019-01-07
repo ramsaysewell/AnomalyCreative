@@ -10,6 +10,10 @@ html {
   color: $dark;
 }
 
+.sectionHeader {
+  text-align: left;
+}
+
 // END GLOBAL
 
 // HEADER
@@ -494,6 +498,10 @@ html {
     ul {
       padding: 5px 0 0;
     }
+  }
+
+  .contact {
+    width: 100%;
   }
 }
 
