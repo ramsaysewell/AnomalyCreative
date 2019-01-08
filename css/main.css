@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Esteban|Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Esteban|Montserrat:400,700|Merriweather");
 .navbar {
   position: absolute; }
 
@@ -24,11 +24,14 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 16px;
   color: #232323; }
 
+.sectionHeader {
+  text-align: left; }
+
 .header {
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -95,7 +98,7 @@ html {
         font: "Montserrat";
         font-weight: 700; }
       .showcase .row .item p {
-        font: "Esteban";
+        font: "Merriweather";
         text-align: center;
         font-size: 18px; }
       .showcase .row .item img:hover {
@@ -170,9 +173,9 @@ html {
     .contact .inputRow .inputGroup {
       width: 45%; }
       .contact .inputRow .inputGroup label {
-        font: "Esteban";
+        font: "Merriweather";
         opacity: 0;
-        font-size: 14px;
+        font-size: 12px;
         animation: 0.5s ease-in;
         position: absolute;
         z-index: 8;
@@ -230,7 +233,7 @@ html {
       .footer .footer-padding .footer-left .footer-contact a {
         color: #3E70D5 !important;
         font-weight: 700;
-        font-size: 21px; }
+        font-size: 19px; }
       .footer .footer-padding .footer-left .footer-copyright {
         color: #858585; }
     .footer .footer-padding .footer-right {
@@ -337,13 +340,16 @@ html {
     .footer-right .address {
       order: 5; }
     .footer-right ul {
-      padding: 5px 0 0; } }
+      padding: 5px 0 0; }
+
+  .contact {
+    width: 100%; } }
 @media (max-width: 1100px) {
   .servicesSection .services .service {
     padding: 20px;
     width: 100%; } }
 p {
-  font: "Esteban"; }
+  font-family: "Merriweather"; }
 
 a {
   color: #000; }
@@ -351,5 +357,9 @@ a {
 h1 {
   font: "Montserrat";
   font-weight: 700; }
+
+.itemText p {
+  font-family: 'Merriweather';
+  font-style: italic; }
 
 /*# sourceMappingURL=main.css.map */
