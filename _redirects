@@ -1,0 +1,5 @@
+# Redirect domain aliases to primary domain
+https://anomalycreative.co/* https://anomalycreative.net/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://anomalycreative.netlify.com/* https://anomalycreative.net/:splat 301!
