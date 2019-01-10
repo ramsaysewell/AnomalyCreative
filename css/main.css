@@ -73,6 +73,12 @@ html {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat; }
+      .showcase .row .item #rpc {
+        background-color: #ed5252; }
+      .showcase .row .item #swnationals {
+        background-color: #5673fe; }
+      .showcase .row .item #limited {
+        background-color: #8d56fe; }
       .showcase .row .item .overlay {
         display: block;
         height: 450px;

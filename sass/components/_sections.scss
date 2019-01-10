@@ -71,6 +71,24 @@ html {
       background-position: center;
       background-repeat: no-repeat;
 
+      // Overlays
+
+      #rpc {
+        background-color: #ed5252;
+      }
+
+      #swnationals {
+        background-color: #5673fe;
+      }
+
+      #city {
+        // background-color: #fff;
+      }
+
+      #limited {
+        background-color: #8d56fe;
+      }
+
       .overlay {
         display: block;
         height: 450px;
@@ -86,6 +104,7 @@ html {
         &:before {
           content: "";
         }
+
       }
 
       .itemText {
