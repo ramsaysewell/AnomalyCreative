@@ -18,6 +18,20 @@ nav {
       display: inline-block;
       margin: 0 50px; }
 
+p {
+  font-family: "Merriweather"; }
+
+a {
+  color: #000; }
+
+h1 {
+  font: "Montserrat";
+  font-weight: 700; }
+
+.itemText p {
+  font-family: 'Merriweather';
+  font-style: italic; }
+
 body,
 html {
   height: 100%;
@@ -73,6 +87,12 @@ html {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat; }
+      .showcase .row .item #rpc {
+        background-color: #ed5252; }
+      .showcase .row .item #swnationals {
+        background-color: #5673fe; }
+      .showcase .row .item #limited {
+        background-color: #8d56fe; }
       .showcase .row .item .overlay {
         display: block;
         height: 450px;
@@ -264,6 +284,84 @@ html {
       .footer .footer-padding .footer-right .footer-copyright {
         bottom: 0; }
 
+#rpc {
+  background-image: url(".././img/projects/houses-project.png"); }
+  #rpc .overlay {
+    background-color: #ed5252; }
+
+#swnationals {
+  background-image: url(".././img/projects/baseball-project.png"); }
+  #swnationals .overlay {
+    background-color: #ed5252; }
+
+.showcaseHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font: "Montserrat";
+  font-weight: 700;
+  font-size: 4vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom; }
+  .showcaseHeader .contents {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; }
+    .showcaseHeader .contents .text {
+      width: 90%;
+      margin: 0 auto;
+      color: white;
+      position: absolute;
+      z-index: 99; }
+    .showcaseHeader .contents .overlay {
+      display: block;
+      height: 100vh;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      opacity: 0.5;
+      transition: 0.5s;
+      z-index: 55; }
+      .showcaseHeader .contents .overlay:before {
+        content: ""; }
+
+main .showcaseRow {
+  display: flex;
+  justify-content: center;
+  min-height: 600px;
+  margin: 4% 4% 0;
+  flex-wrap: wrap; }
+  main .showcaseRow .item {
+    flex-basis: fit-content;
+    width: 600px; }
+    main .showcaseRow .item img {
+      float: right;
+      max-width: 100%;
+      max-height: 80%; }
+  main .showcaseRow .text {
+    padding-top: 10%; }
+    main .showcaseRow .text h2 {
+      font-family: 'Montserrat';
+      font-weight: bold; }
+      main .showcaseRow .text h2 p {
+        font-family: 'Montserrat'; }
+  main .showcaseRow:nth-child(2) .item:nth-child(1) {
+    height: 100% !important; }
+  main .showcaseRow:nth-child(2) .item:nth-child(2) {
+    height: 70% !important; }
+  main .showcaseRow .homepage {
+    margin-bottom: 0 !important;
+    height: 80% !important;
+    padding: 0;
+    margin: 0; }
+    main .showcaseRow .homepage img {
+      width: 100%; }
+
 @media (max-width: 1100px) {
   .header {
     width: 100%; }
@@ -348,18 +446,8 @@ html {
   .servicesSection .services .service {
     padding: 20px;
     width: 100%; } }
-p {
-  font-family: "Merriweather"; }
-
-a {
-  color: #000; }
-
-h1 {
-  font: "Montserrat";
-  font-weight: 700; }
-
-.itemText p {
-  font-family: 'Merriweather';
-  font-style: italic; }
+@media (max-width: 1200px) {
+  main .showcaseRow #bws {
+    order: -1 !important; } }
 
 /*# sourceMappingURL=main.css.map */

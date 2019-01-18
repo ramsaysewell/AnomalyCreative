@@ -71,6 +71,24 @@ html {
       background-position: center;
       background-repeat: no-repeat;
 
+      // Overlays
+
+      #rpc {
+        background-color: $rpc;
+      }
+
+      #swnationals {
+        background-color: $swnationals;
+      }
+
+      #city {
+        // background-color: #fff;
+      }
+
+      #limited {
+        background-color: $limited;
+      }
+
       .overlay {
         display: block;
         height: 450px;
@@ -86,6 +104,7 @@ html {
         &:before {
           content: "";
         }
+
       }
 
       .itemText {
@@ -368,6 +387,133 @@ html {
 
 // END FOOTER
 
+// SHOWCASES
+
+#rpc {
+  background-image: url(".././img/projects/houses-project.png");
+
+  .overlay {
+    background-color: $rpc;
+  }
+}
+
+#swnationals {
+  background-image: url(".././img/projects/baseball-project.png");
+
+  .overlay {
+    background-color: $rpc;
+  }
+}
+
+.showcaseHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font: $heading;
+  font-weight: $headingWeight;
+  font-size: 4vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  .contents {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .text {
+      width: 90%;
+      margin: 0 auto;
+      color: white;
+      position: absolute;
+      z-index: 99;
+    }
+
+    .overlay {
+      display: block;
+      height: 100vh;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+
+      position: relative;
+      opacity: 0.5;
+      transition: 0.5s;
+      z-index: 55;
+
+      &:before {
+        content: "";
+      }
+    }
+  }
+
+}
+
+main .showcaseRow {
+
+  display: flex;
+  justify-content: center;
+  min-height: 600px;
+  margin: 4% 4% 0;
+  // background-color: grey;
+  flex-wrap: wrap;
+
+  .item {
+    flex-basis: fit-content;
+    width: 600px;
+    // background-color: lightblue;
+
+    img {
+      float: right;
+      max-width: 100%;
+      max-height: 80%;
+    }
+  }
+
+  .text {
+    padding-top: 10%;
+
+    h2 {
+      font-family: 'Montserrat';
+      font-weight: bold;
+
+      p {
+        font-family: 'Montserrat';
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    .item {
+      &:nth-child(1) {
+        height: 100% !important;
+        // background-color: blue;
+      }
+
+      &:nth-child(2) {
+
+        height: 70% !important;
+        // background-color: pink;
+      }
+    }
+  }
+
+  .homepage {
+    margin-bottom: 0 !important;
+    height: 80% !important;
+    padding: 0;
+    margin: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
 // RESPONSIVE
 
 @media (max-width: 1100px) {
@@ -512,6 +658,13 @@ html {
         padding: 20px;
         width: 100%;
       }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  main .showcaseRow {
+    #bws {
+      order: -1 !important;
     }
   }
 }
