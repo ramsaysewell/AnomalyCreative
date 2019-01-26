@@ -558,15 +558,17 @@ main .showcaseRow {
 }
 
 @media (max-width: 960px) {
-  main .showcaseRow .item {
-    margin: 0 auto;
-    text-align: center;
-
-    img {
+  main .showcaseRow {
+    .item {
+      margin: 50px auto;
       text-align: center;
-      max-height: 500px;
-      margin: 0 auto;
-      // padding: 30px;
+
+      img {
+        text-align: center;
+        max-height: 500px;
+        margin: 0 auto;
+        // padding: 30px;
+      }
     }
   }
 
@@ -668,11 +670,11 @@ main .showcaseRow {
   }
 }
 
-@media (max-width: 1100px) {}
 @media (max-width: 1200px) {
   main .showcaseRow {
     #bws {
       order: -1 !important;
+      text-align: center;
     }
   }
 }
