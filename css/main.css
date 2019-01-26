@@ -284,16 +284,6 @@ html {
       .footer .footer-padding .footer-right .footer-copyright {
         bottom: 0; }
 
-#rpc {
-  background-image: url(".././img/projects/houses-project.png"); }
-  #rpc .overlay {
-    background-color: #ed5252; }
-
-#swnationals {
-  background-image: url(".././img/projects/baseball-project.png"); }
-  #swnationals .overlay {
-    background-color: #ed5252; }
-
 .showcaseHeader {
   display: flex;
   justify-content: center;
@@ -305,6 +295,14 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom; }
+  .showcaseHeader #rpc {
+    background-image: url(".././img/projects/houses-project.png"); }
+    .showcaseHeader #rpc .overlay {
+      background-color: #ed5252; }
+  .showcaseHeader #swnationals {
+    background-image: url(".././img/projects/baseball-project.png"); }
+    .showcaseHeader #swnationals .overlay {
+      background-color: #ed5252; }
   .showcaseHeader .contents {
     width: 100%;
     display: flex;

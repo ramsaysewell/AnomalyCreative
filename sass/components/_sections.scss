@@ -389,22 +389,6 @@ html {
 
 // SHOWCASES
 
-#rpc {
-  background-image: url(".././img/projects/houses-project.png");
-
-  .overlay {
-    background-color: $rpc;
-  }
-}
-
-#swnationals {
-  background-image: url(".././img/projects/baseball-project.png");
-
-  .overlay {
-    background-color: $rpc;
-  }
-}
-
 .showcaseHeader {
   display: flex;
   justify-content: center;
@@ -416,6 +400,22 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+
+  #rpc {
+    background-image: url(".././img/projects/houses-project.png");
+
+    .overlay {
+      background-color: $rpc;
+    }
+  }
+
+  #swnationals {
+    background-image: url(".././img/projects/baseball-project.png");
+
+    .overlay {
+      background-color: $rpc;
+    }
+  }
 
   .contents {
     width: 100%;
