@@ -389,22 +389,6 @@ html {
 
 // SHOWCASES
 
-#rpc {
-  background-image: url(".././img/projects/houses-project.png");
-
-  .overlay {
-    background-color: $rpc;
-  }
-}
-
-#swnationals {
-  background-image: url(".././img/projects/baseball-project.png");
-
-  .overlay {
-    background-color: $rpc;
-  }
-}
-
 .showcaseHeader {
   display: flex;
   justify-content: center;
@@ -416,6 +400,22 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+
+  &#rpc {
+    background-image: url(".././img/projects/houses-project.png");
+
+    .overlay {
+      background-color: $rpc;
+    }
+  }
+
+  &#swnationals {
+    background-image: url(".././img/projects/baseball-project.png");
+
+    .overlay {
+      background-color: $swnationals;
+    }
+  }
 
   .contents {
     width: 100%;
@@ -459,13 +459,19 @@ main .showcaseRow {
   justify-content: center;
   min-height: 600px;
   margin: 4% 4% 0;
-  // background-color: grey;
   flex-wrap: wrap;
+
+  .image {
+    height: 100%;
+
+    img {
+      padding: 0 !important;
+    }
+  }
 
   .item {
     flex-basis: fit-content;
     width: 600px;
-    // background-color: lightblue;
 
     img {
       float: right;
@@ -491,13 +497,11 @@ main .showcaseRow {
     .item {
       &:nth-child(1) {
         height: 100% !important;
-        // background-color: blue;
       }
 
       &:nth-child(2) {
 
         height: 70% !important;
-        // background-color: pink;
       }
     }
   }
@@ -517,13 +521,14 @@ main .showcaseRow {
 // RESPONSIVE
 
 @media (max-width: 1100px) {
-  // .showcase {
-  //   .item {
-  //     .overlay {
-  //       max-width: 50%;
-  //     }
-  //   }
-  // }
+  .servicesSection {
+    .services {
+      .service {
+        padding: 20px;
+        width: 100%;
+      }
+    }
+  }
 
   .header {
     width: 100%;
@@ -553,6 +558,18 @@ main .showcaseRow {
 }
 
 @media (max-width: 960px) {
+  main .showcaseRow .item {
+    margin: 0 auto;
+    text-align: center;
+
+    img {
+      text-align: center;
+      max-height: 500px;
+      margin: 0 auto;
+      // padding: 30px;
+    }
+  }
+
   .about {
     width: 100%;
 
@@ -651,16 +668,7 @@ main .showcaseRow {
   }
 }
 
-@media (max-width: 1100px) {
-  .servicesSection {
-    .services {
-      .service {
-        padding: 20px;
-        width: 100%;
-      }
-    }
-  }
-}
+@media (max-width: 1100px) {}
 @media (max-width: 1200px) {
   main .showcaseRow {
     #bws {
