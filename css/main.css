@@ -295,14 +295,14 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom; }
-  .showcaseHeader #rpc {
+  .showcaseHeader#rpc {
     background-image: url(".././img/projects/houses-project.png"); }
-    .showcaseHeader #rpc .overlay {
+    .showcaseHeader#rpc .overlay {
       background-color: #ed5252; }
-  .showcaseHeader #swnationals {
+  .showcaseHeader#swnationals {
     background-image: url(".././img/projects/baseball-project.png"); }
-    .showcaseHeader #swnationals .overlay {
-      background-color: #ed5252; }
+    .showcaseHeader#swnationals .overlay {
+      background-color: #5673fe; }
   .showcaseHeader .contents {
     width: 100%;
     display: flex;
@@ -334,6 +334,10 @@ main .showcaseRow {
   min-height: 600px;
   margin: 4% 4% 0;
   flex-wrap: wrap; }
+  main .showcaseRow .image {
+    height: 100%; }
+    main .showcaseRow .image img {
+      padding: 0 !important; }
   main .showcaseRow .item {
     flex-basis: fit-content;
     width: 600px; }
@@ -361,6 +365,10 @@ main .showcaseRow {
       width: 100%; }
 
 @media (max-width: 1100px) {
+  .servicesSection .services .service {
+    padding: 20px;
+    width: 100%; }
+
   .header {
     width: 100%; }
     .header #anomaly,
@@ -374,6 +382,14 @@ main .showcaseRow {
   .testimonialsSection .testimonials .testimonial {
     margin: 10px 0; } }
 @media (max-width: 960px) {
+  main .showcaseRow .item {
+    margin: 0 auto;
+    text-align: center; }
+    main .showcaseRow .item img {
+      text-align: center;
+      max-height: 500px;
+      margin: 0 auto; }
+
   .about {
     width: 100%; }
     .about .collage {
@@ -439,10 +455,6 @@ main .showcaseRow {
       padding: 5px 0 0; }
 
   .contact {
-    width: 100%; } }
-@media (max-width: 1100px) {
-  .servicesSection .services .service {
-    padding: 20px;
     width: 100%; } }
 @media (max-width: 1200px) {
   main .showcaseRow #bws {
